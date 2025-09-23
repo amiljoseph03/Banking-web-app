@@ -69,5 +69,31 @@ function deposit(){
 // withdraw
 
 
+function withdraw(){
+    let amount=parseFloat(document.getElementById('withamount').value)
+    let account= document.getElementById('withacno').value
 
+    let stored = localStorage.getItem(account)
+
+    let user=JSON.parse(stored)
+
+    if(!user.balance){
+        user.balance=0
+    }
+
+    if(user.balance>=amount){
+        user.balance-= amount
+
+        localStorage.setItem(account,JSON.stringify(user))
+     alert("success")
+        withdrawresult.innerHTML = `
+        <h3>Withdrawal successful! New balance: ₹${user.balance}</h3>
+        `
+    }else{
+
+           document.getElementById('withdrawresult').innerHTML = `
+        <h3>insufficient balance ! available balance is ₹${user.balance}</h3>`;
+
+    }
+}
 
