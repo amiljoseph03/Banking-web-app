@@ -48,19 +48,18 @@ nav {
 
 .whole {
     display: flex;
-    /* justify-content: center;  */
-     /* centers both containers horizontally */
-    gap: 30px;                /* space between deposit and withdraw boxes */
-    margin: 40px 20px;        /* spacing below welcome div */
-    flex-wrap: wrap;           /* optional: wrap on smaller screens */
+  
+    gap: 30px;               
+    margin: 40px 20px;       
+    flex-wrap: wrap;          
 }
 
 .container1, .container2 {
-    background-color: #fff;
+    background-color: rgb(98, 160, 160);
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 22px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    width: 300px;             /* same width for both containers */
+    width: 250px;           
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,11 +84,15 @@ nav {
     padding: 12px 0;
     border-radius: 25px;
     border: none;
-    background-color: #007bff;
+    background-color: #3bd17f;
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.container2 button{
+  background-color: #eaa055;
 }
 
 .container1 button:hover, .container2 button:hover {
