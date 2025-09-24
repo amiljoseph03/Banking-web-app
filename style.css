@@ -34,7 +34,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: aquamarine;
 }
 
 .text{
@@ -56,4 +56,23 @@ nav {
 }
 .contents{
     display: flex;
+}
+
+.contents img{
+    height: 600px;
+}
+
+button {
+  padding: 12px 28px;
+  background-color: #007bff;  
+  color: white;          
+  border: none;
+  border-radius: 8px;          
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease, transform 0.2s ease; */
+}
+button:hover {
+  background-color: green;
 }
