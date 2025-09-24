@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;   
+  width: auto;   
+}
+
+.rl {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
